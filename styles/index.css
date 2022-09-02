@@ -17,6 +17,22 @@ body {
   @apply font-bold text-2xl;
 }
 
+html,
+body,
+#__next {
+  @apply h-full;
+}
+
+html {
+  font-size: calc(3px + 0.65vw);
+}
+
+@media screen and (min-width:400px) {
+  html{
+  font-size: calc(4px + 0.65vw);
+  }
+}
+
 .header-link {
   @apply underline underline-offset-2 font-bold text-sm text-white font-para;
 }
@@ -50,5 +66,28 @@ body {
 }
 
 .image-learn-more--3 {
+  background-image: url(../assets/images/nikhita-s-NsPDiPFTp4c-unsplash.jpg);
+}
+
+.image-learn-more--4 {
   background-image: url(../assets/images/ray-sangga-kusuma-7uSrOyY1U0I-unsplash.jpg);
+}
+
+.radio:checked ~ .radio-label .radio-label-icon {
+  opacity: 1;
+}
+
+#headerCheckbox:checked ~ .header-mobile .header-mobile-nav {
+  display: flex;
+}
+
+.donation {
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.85),
+      rgba(0, 0, 0, 0.85)
+    ),
+    url(../assets/images/ivan-aleksic-PDRFeeDniCk-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
 }

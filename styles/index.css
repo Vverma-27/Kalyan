@@ -1,10 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600&family=Roboto+Condensed:wght@400;700&display=swap");
 /* purgecss start ignore */
-@tailwind base;
-@tailwind components;
-/* purgecss end ignore */
-@tailwind utilities;
-
 body {
   @apply bg-white;
 }
@@ -91,3 +86,8 @@ html {
   background-size: cover;
   background-position: center;
 }
+
+@tailwind base;
+@tailwind components;
+/* purgecss end ignore */
+@tailwind utilities;

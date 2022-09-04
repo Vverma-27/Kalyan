@@ -1,9 +1,8 @@
 import React, { useEffect } from "react";
-import { AppProps } from "next/app";
 import "../styles/index.css";
 import LoadRazorpay from "../Functions/LoadRazorpay";
 
-function MyApp({ Component, pageProps }: AppProps) {
+function MyApp({ Component, pageProps }) {
   useEffect(() => {
     const asyncFunc = async () => {
       const res = await LoadRazorpay();

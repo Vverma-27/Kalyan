@@ -8,7 +8,6 @@ jobs:
   copy-file:
     runs-on: ubuntu-latest
     steps:
-      - run: yarn build
       - name: Pushes to another repository
           uses: 'cpina/github-action-push-to-another-repository@main'
           env:
@@ -20,3 +19,4 @@ jobs:
             user-email: 'vverma270705@gmail.com'
             commit-message: 'Build transferred automatically'
             target-branch: main
+      - run: npm build

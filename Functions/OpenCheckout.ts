@@ -42,27 +42,30 @@ const OpenCheckout = async (
     currency,
     name: "Kalyan Trust",
     description: "Test Transaction",
-    handler: async (response) => {
-      console.log("response ", response);
-      const values = {
-        ...response,
-        id,
-      };
-      const res = await donationRoute.post<
-        any,
-        {
-          data: {
-            success: boolean;
-          };
-        }
-      >("/verification", values);
-      if (!res.data.success) {
-        alert("Payment Failed");
-        // window.location.href = process.env.NEXT_PUBLIC_REACT_APP_URL;
-      } else {
-        window.location.href = `${process.env.NEXT_PUBLIC_REACT_APP_URL}/success`;
-      }
+    handler: (response) => {
+      window.location.href = `${window.location.origin}/success`;
     },
+    // handler: async (response) => {
+    //   console.log("response ", response);
+    //   const values = {
+    //     ...response,
+    //     id,
+    //   };
+    //   const res = await donationRoute.post<
+    //     any,
+    //     {
+    //       data: {
+    //         success: boolean;
+    //       };
+    //     }
+    //   >("/verification", values);
+    //   if (!res.data.success) {
+    //     alert("Payment Failed");
+    //     // window.location.href = process.env.NEXT_PUBLIC_REACT_APP_URL;
+    //   } else {
+    //     window.location.href = `${process.env.NEXT_PUBLIC_REACT_APP_URL}/success`;
+    //   }
+    // },
     image: "/logo-raz.jpg", //This is a sample Order ID. Pass the `id` obtained in the response of Step 1
     // callback_url: `${process.env.NEXT_PUBLIC_REACT_APP_URL}/success`,
     prefill: {

@@ -43,6 +43,7 @@ const Layout = ({ children, title = "This is the default title" }: Props) => {
           <div className="flex w-60 ">
             <Image
               src={require("/public/logo-horizontal.png")}
+              layout="fill"
               // height={40.5}
               // width={89}
             />
@@ -99,9 +100,10 @@ const Layout = ({ children, title = "This is the default title" }: Props) => {
             <a className="header-link">Volunteer</a>
           </Link>
         </nav>
-        <div className="flex   ">
+        <div className="flex ">
           <Image
             src={require("/public/logo-horizontal.png")}
+            // layout="fill"
             // height={40.5}
             // width={89}
           />
@@ -111,7 +113,7 @@ const Layout = ({ children, title = "This is the default title" }: Props) => {
       <footer className="bg-secondary flex px-10 py-6 justify-center items-center gap-10 ">
         <div className="flex-1">
           <Image
-            src={require("/public/logo-vertical.png")}
+            src="/logo-vertical.png"
             height={81}
             width={178}
             // className="aspect-auto"

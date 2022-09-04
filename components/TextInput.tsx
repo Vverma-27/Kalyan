@@ -14,7 +14,7 @@ const TextInput = React.forwardRef(
         w-full
         px-3
         peer
-        py-1.5
+        py-2
         text-base
         text-black
         bg-white bg-clip-padding

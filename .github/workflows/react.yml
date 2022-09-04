@@ -11,7 +11,6 @@ jobs:
     - name: Build app
       run: yarn build
     - name: Pushes to another repository
-        id: push_directory
         uses: cpina/github-action-push-to-another-repository@main
         env:
           SSH_DEPLOY_KEY: ${{ secrets.SSH_DEPLOY_KEY }}

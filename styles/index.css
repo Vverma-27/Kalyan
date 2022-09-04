@@ -42,7 +42,7 @@ html {
       rgba(0, 0, 0, 0.75),
       rgba(0, 0, 0, 0.75)
     ),
-    url(../public/yannis-h-uaPaEM7MiQQ-unsplash.jpg);
+    url(../public/p4.jpg);
   background-size: cover;
   background-position: center;
 }
@@ -57,15 +57,15 @@ html {
 }
 
 .image-learn-more--2 {
-  background-image: url(../public/brooke-cagle--uHVRvDr7pg-unsplash.jpg);
+  background-image: url(../public/p1.jpg);
 }
 
 .image-learn-more--3 {
-  background-image: url(../public/nikhita-s-NsPDiPFTp4c-unsplash.jpg);
+  background-image: url(../public/p3.jpg);
 }
 
 .image-learn-more--4 {
-  background-image: url(../public/ray-sangga-kusuma-7uSrOyY1U0I-unsplash.jpg);
+  background-image: url(../public/p5.jpg);
 }
 
 .radio:checked ~ .radio-label .radio-label-icon {
@@ -82,7 +82,7 @@ html {
       rgba(0, 0, 0, 0.85),
       rgba(0, 0, 0, 0.85)
     ),
-    url(../public/ivan-aleksic-PDRFeeDniCk-unsplash.jpg);
+    url(../public/p2.jpg);
   background-size: cover;
   background-position: center;
 }

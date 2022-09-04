@@ -23,4 +23,4 @@ jobs:
           user-email: "vverma270705@gmail.com"
           commit-message: "Build transferred automatically"
           target-branch: trial
-          target-director: build
+          target-directory: build

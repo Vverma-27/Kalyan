@@ -10,13 +10,13 @@ jobs:
     steps:
       - run: yarn build
       - name: Pushes to another repository
-          uses: cpina/github-action-push-to-another-repository@main
+          uses: 'cpina/github-action-push-to-another-repository@main'
           env:
             SSH_DEPLOY_KEY: ${{ secrets.SSH_DEPLOY_KEY }}
           with:
-            source-directory: build/
+            source-directory: 'build/'
             destination-github-username: 'Vverma-27'
             destination-repository-name: 'Kalyan-backend'
-            user-email: vverma270705@gmail.com
-            commit-message: Build transferred automatically
+            user-email: 'vverma270705@gmail.com'
+            commit-message: 'Build transferred automatically'
             target-branch: main

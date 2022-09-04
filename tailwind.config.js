@@ -5,6 +5,7 @@ module.exports = {
     "./pages/**/*.{js,jsx,ts,tsx}",
     "./components/**/*.{js,jsx,ts,tsx}",
   ],
+  purge: ["./pages/**/*.{js,jsx,ts,tsx}", "./components/**/*.{js,jsx,ts,tsx}"],
   theme: {
     screens: {
       sm: "480px",
@@ -12,6 +13,7 @@ module.exports = {
       lg: "976px",
       xl: "1440px",
     },
+    safelist: ["text-[7rem]"],
     colors: {
       primary: "#13347C",
       "primary-dark": "#10202C",

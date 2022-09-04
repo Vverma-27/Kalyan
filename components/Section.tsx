@@ -34,7 +34,7 @@ const Section = ({
     >
       {/* <section className="flex-1 w-40">
         <Image
-          src={require("../assets/images/learn-more.jpg")}
+          src={require("/public/learn-more.jpg")}
           // height={181}
           // width={213.5}
         />

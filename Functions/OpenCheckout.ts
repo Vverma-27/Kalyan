@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../assets/images/logo-horizontal.png";
+import logo from "/public/logo-horizontal.png";
 import route from "../Api";
 
 const OpenCheckout = async (

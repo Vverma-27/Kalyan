@@ -43,7 +43,6 @@ const Layout = ({ children, title = "This is the default title" }: Props) => {
           <div className="flex w-60 ">
             <Image
               src={require("/public/logo-horizontal.png")}
-              layout="fill"
               // height={40.5}
               // width={89}
             />

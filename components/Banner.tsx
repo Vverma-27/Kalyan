@@ -19,8 +19,8 @@ const Banner = () => {
       className="h-3/4   md:h-screen relative flex justify-center items-center flex-col"
     >
       <h1
-        className="text-white font-bold translate-x-0  md:translate-x-16 text-[7rem]  font-heading  pt-14 "
-        style={{ lineHeight: "inherit" }}
+        className="text-white font-bold translate-x-0  md:translate-x-16  font-heading  pt-14 "
+        style={{ lineHeight: "inherit", fontSize: "7rem" }}
       >
         Help Educate Children
       </h1>

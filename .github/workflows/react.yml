@@ -1,0 +1,24 @@
+name: Push File(or Dir) to another repository
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  copy-file:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Build app
+      run: yarn build
+    - name: Pushes to another repository
+        id: push_directory
+        uses: cpina/github-action-push-to-another-repository@main
+        env:
+          SSH_DEPLOY_KEY: ${{ secrets.SSH_DEPLOY_KEY }}
+        with:
+          source-directory: build/
+          destination-github-username: 'Vverma-27'
+          destination-repository-name: 'Kalyan-backend'
+          user-email: vverma270705@gmail.com
+          commit-message: Build transferred automatically
+          target-branch: main

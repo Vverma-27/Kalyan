@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import Button from "./Button";
 import { FaBookOpen, FaDonate, FaInstagram } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa";
-import { FaTwitter } from "react-icons/fa";
+import { FaDiscord } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 
 import { MdVolunteerActivism } from "react-icons/md";
@@ -19,8 +19,8 @@ const Banner = () => {
       className="h-3/4   md:h-screen relative flex justify-center items-center flex-col"
     >
       <h1
-        className="text-white font-bold translate-x-0  md:translate-x-16 text-[7rem]  font-heading  pt-14 "
-        style={{ lineHeight: "inherit" }}
+        className="text-white font-bold translate-x-0  md:translate-x-16  font-heading  pt-14 "
+        style={{ lineHeight: "inherit", fontSize: "7rem" }}
       >
         Help Educate Children
       </h1>
@@ -37,7 +37,7 @@ const Banner = () => {
           <FaInstagram className="text-white text-4xl " />
           <FaFacebook className="text-white text-4xl " />
           <FaLinkedin className="text-white text-4xl " />
-          <FaTwitter className="text-white text-4xl " />
+          <FaDiscord className="text-white text-4xl " />
         </section>
       </section>
       <section className="flex absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-48 lg:translate-y-60   ">

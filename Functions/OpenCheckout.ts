@@ -21,7 +21,7 @@ const OpenCheckout = async (
         id: string;
       };
     }
-  >("/", { amount: argAmount, frequency });
+  >("", { amount: argAmount, frequency });
   console.log(res);
   id = res.data.id;
   const {

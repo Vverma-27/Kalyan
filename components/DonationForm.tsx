@@ -9,7 +9,7 @@ const DonationForm = () => {
   const nameRef = useRef(null);
   const emailRef = useRef(null);
   const amountRef = useRef(null);
-  const [frequency, setFrequency] = useState(null);
+  const [frequency, setFrequency] = useState("one-time");
   return (
     <section
       className="py-24  px-20 flex flex-col justify-center items-center relative  donation"

@@ -1,8 +1,8 @@
 import axios from "axios";
 const route = (baseURL: string) => {
-  console.log(`${process.env.NEXT_PUBLIC_REACT_APP_API_URL}${baseURL}`);
+  console.log(`${window.location.origin}${baseURL}`);
   return axios.create({
-    baseURL: `${process.env.NEXT_PUBLIC_REACT_APP_API_URL}${baseURL}`,
+    baseURL: `${window.location.origin}${baseURL}`,
   });
 };
 

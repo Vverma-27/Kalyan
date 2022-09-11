@@ -1,9 +1,8 @@
 import React, { useEffect } from "react";
+import "react-toastify/dist/ReactToastify.css";
+import { ToastContainer } from "react-toastify";
 import "../styles/index.css";
 import LoadRazorpay from "../Functions/LoadRazorpay";
-import { ToastContainer } from "react-toastify";
-
-import "react-toastify/dist/ReactToastify.css";
 
 function MyApp({ Component, pageProps }) {
   useEffect(() => {

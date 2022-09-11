@@ -3,7 +3,7 @@
   "scripts": {
     "dev": "dotenv -e .env.local ts-node server/index.ts",
     "build": "next build",
-    "start": "next start",
+    "start": "ts-node server/index.ts",
     "type-check": "tsc"
   },
   "dependencies": {
@@ -16,7 +16,8 @@
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-icons": "^4.4.0",
-    "react-toastify": "^9.0.8"
+    "react-toastify": "^9.0.8",
+    "sharp": "^0.31.0"
   },
   "devDependencies": {
     "@fullhuman/postcss-purgecss": "^4.1.3",

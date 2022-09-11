@@ -135,6 +135,21 @@ const Layout = ({ children, title = "This is the default title" }: Props) => {
           </Link>
         </section>
         <section className="footer-section flex-1">
+          <h3>Legal Links</h3>
+          <Link href="https://merchant.razorpay.com/policy/KGVAQwi692P5OD/privacy">
+            <a className="footer-link">Privacy Policy</a>
+          </Link>
+          <Link href="https://merchant.razorpay.com/policy/KGVAQwi692P5OD/refund">
+            <a className="footer-link">Refund Policy</a>
+          </Link>
+          <Link href="https://merchant.razorpay.com/policy/KGVAQwi692P5OD/terms">
+            <a className="footer-link">Terms and Conditions</a>
+          </Link>
+          <Link href="https://merchant.razorpay.com/policy/KGVAQwi692P5OD/contact_us">
+            <a className="footer-link">Contact Us</a>
+          </Link>
+        </section>
+        <section className="footer-section flex-1">
           <h3>Follow Us</h3>
           <a className="footer-link">
             <FaInstagram /> Instagram

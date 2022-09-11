@@ -1,4 +1,5 @@
 import React, { useRef, useState } from "react";
+import { toast } from "react-toastify";
 //@ts-ignore
 import OpenCheckout from "../Functions/OpenCheckout.ts";
 import Button from "./Button";
@@ -34,6 +35,7 @@ const DonationForm = () => {
         className="flex flex-col justify-start items-start flex-wrap w-full gap-16"
         onSubmit={(e) => {
           e.preventDefault();
+          toast.info("We are processing your request. Please Wait.");
           OpenCheckout(
             nameRef.current.value,
             emailRef.current.value,

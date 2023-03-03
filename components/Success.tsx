@@ -36,7 +36,7 @@ const Success = () => {
             // style={{ height: "70%" }}
             style={{ width: "140%" }}
           >
-            <Image src="/success-1.png" />
+            <Image src="/success-1.png" alt={""} />
           </div>
         </section>
       </section>

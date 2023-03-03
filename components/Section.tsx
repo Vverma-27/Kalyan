@@ -26,7 +26,7 @@ const Section = ({
   id,
 }: IProps) => {
   const [opened, setOpened] = useState(false);
-  console.log(process.env);
+  // console.log(process.env);
   return (
     <section
       className={`py-28  px-20 flex  justify-between align-start gap-24 ${className}`}

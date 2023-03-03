@@ -11,7 +11,7 @@ import Link from "next/link";
 
 const Banner = () => {
   // useEffect(() => {
-  console.log(process.env.NEXT_PUBLIC_REACT_APP_API_URL);
+  // console.log(process.env.NEXT_PUBLIC_REACT_APP_API_URL);
   // }, []);
   return (
     <section
@@ -26,10 +26,10 @@ const Banner = () => {
       </h1>
       <section className="flex flex-col justify-center items-center gap-8 pt-14 ">
         <section className="flex gap-10">
-          <Link href="#donate">
+          <Link scroll={false} href="#donate">
             <Button primary title="Donate Now" />
           </Link>
-          <Link href="#about">
+          <Link scroll={false} href="#about">
             <Button title="Learn More" />
           </Link>
         </section>
@@ -50,7 +50,7 @@ const Banner = () => {
             <p className="font-para text-center text-base   font-semibold">
               The trust invites volunteers to help it in noble causes.
             </p>
-            <Button title="Register Now" color="primary" />
+            <Button title="Coming Soon" color="primary" />
           </>
         </Card>
         <Card bg="" className="bg-primary-dark">
@@ -62,7 +62,7 @@ const Banner = () => {
             <p className="font-para text-center text-base text-white  font-semibold">
               Small contributions create big results
             </p>
-            <Link href="#donate">
+            <Link scroll={false} href="#donate">
               <Button title="Donate Now" borderColor="white" />
             </Link>
           </>
@@ -76,7 +76,7 @@ const Banner = () => {
             <p className="font-para text-center text-base  text-white font-semibold">
               Kalyan Trust sponsors education for underprivegeled children
             </p>
-            <Link href="#learn">
+            <Link scroll={false} href="#learn">
               <Button title="Read More" borderColor="white" />
             </Link>
           </>

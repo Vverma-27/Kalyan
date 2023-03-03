@@ -1,8 +1,18 @@
 import axios from "axios";
 const route = (baseURL: string) => {
-  console.log(`${window.location.origin}${baseURL}`);
+  console.log(
+    `${
+      process.env.NODE_ENV === "production"
+        ? "kalyantrust.org"
+        : window.location.origin
+    }${baseURL}`
+  );
   return axios.create({
-    baseURL: `${window.location.origin}${baseURL}`,
+    baseURL: `${
+      process.env.NODE_ENV === "production"
+        ? "kalyantrust.org"
+        : window.location.origin
+    }${baseURL}`,
   });
 };
 

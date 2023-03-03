@@ -30,7 +30,8 @@ app
         console.log("logged in to mongo");
       })
       .catch((err) => {
-        console.log(err.message);
+        console.log("🚀 ~ file: index.ts:33 ~ .then ~ err:", err)
+        // console.log(err.message);
       });
     server.use(cors({ origin: "*" }));
     server.use(express.json());

@@ -16,6 +16,7 @@ type Props = {
 const Layout = ({ children, title = "This is the default title" }: Props) => {
   const [scroll, setScroll] = useState(0);
   useEffect(() => {
+    setScroll(window.pageYOffset);
     window.addEventListener("scroll", () => setScroll(window.pageYOffset));
   }, []);
   return (
@@ -43,29 +44,29 @@ const Layout = ({ children, title = "This is the default title" }: Props) => {
           <div className="flex w-60 ">
             <Image
               src={require("/public/logo-horizontal.png")}
-              // height={40.5}
+              alt={""} // height={40.5}
               // width={89}
             />
           </div>
         </section>
         <nav className=" hidden flex-col-reverse justify-start items-start header-mobile-nav gap-8">
-          <Link href="#donate">
+          <Link scroll={false} href="#donate">
             <Button primary title="Donate Now" size="sm" />
           </Link>
           <nav className="flex flex-col justify-start items-start gap-8">
             <Link href="#">
-              <a className="header-link">Home</a>
+              <button className="header-link">Home</button>
             </Link>
-            <Link href="#about">
-              <a className="header-link">About</a>
+            <Link scroll={false} href="#about">
+              <button className="header-link">About</button>
             </Link>
-            <Link href="#mission">
-              <a className="header-link">Our Mission</a>
+            <Link scroll={false} href="#mission">
+              <button className="header-link">Our Mission</button>
             </Link>
-            <Link href="#volunteer">
-              <a className="header-link">Volunteer</a>
+            <Link scroll={false} href="#volunteer">
+              <button className="header-link">Volunteer</button>
             </Link>
-            {/* <Link href="">
+            {/* <Link scroll={false} href="">
               <a className="header-link">Success Stories</a>
             </Link> */}
           </nav>
@@ -81,28 +82,28 @@ const Layout = ({ children, title = "This is the default title" }: Props) => {
         style={{ transition: "all 0.5s ease" }}
       >
         {scroll > 10 ? (
-          <Link href="#donate">
+          <Link scroll={false} href="#donate">
             <Button primary title="Donate Now" size="sm" />
           </Link>
         ) : null}
         <nav className="flex justify-center items-center gap-8">
           <Link href="#">
-            <a className="header-link">Home</a>
+            <button className="header-link">Home</button>
           </Link>
-          <Link href="#about">
-            <a className="header-link">About</a>
+          <Link scroll={false} href="#about">
+            <button className="header-link">About</button>
           </Link>
-          <Link href="#mission">
-            <a className="header-link">Our Mission</a>
+          <Link scroll={false} href="#mission">
+            <button className="header-link">Our Mission</button>
           </Link>
-          <Link href="#volunteer">
-            <a className="header-link">Volunteer</a>
+          <Link scroll={false} href="#volunteer">
+            <button className="header-link">Volunteer</button>
           </Link>
         </nav>
         <div className="flex ">
           <Image
             src={require("/public/logo-horizontal.png")}
-            // layout="fill"
+            alt={""} // layout="fill"
             // height={40.5}
             // width={89}
           />
@@ -115,37 +116,49 @@ const Layout = ({ children, title = "This is the default title" }: Props) => {
             src="/logo-vertical.png"
             height={81}
             width={178}
-            // className="aspect-auto"
+            alt={""} // className="aspect-auto"
             // className="h-20"
           />
         </div>
         <section className="footer-section flex-1">
           <h3>Quick Links</h3>
           <Link href="#">
-            <a className="footer-link">Home</a>
+            <button className="footer-link">Home</button>
           </Link>
-          <Link href="#about">
-            <a className="footer-link">About</a>
+          <Link scroll={false} href="#about">
+            <button className="footer-link">About</button>
           </Link>
-          <Link href="#mission">
-            <a className="footer-link">Our Mission</a>
+          <Link scroll={false} href="#mission">
+            <button className="footer-link">Our Mission</button>
           </Link>
-          <Link href="#volunteer">
-            <a className="footer-link">Volunteer</a>
+          <Link scroll={false} href="#volunteer">
+            <button className="footer-link">Volunteer</button>
           </Link>
         </section>
         <section className="footer-section flex-1">
           <h3>Legal Links</h3>
-          <Link href="https://merchant.razorpay.com/policy/KGVAQwi692P5OD/privacy">
+          <Link
+            legacyBehavior
+            href="https://merchant.razorpay.com/policy/KGVAQwi692P5OD/privacy"
+          >
             <a className="footer-link">Privacy Policy</a>
           </Link>
-          <Link href="https://merchant.razorpay.com/policy/KGVAQwi692P5OD/refund">
+          <Link
+            legacyBehavior
+            href="https://merchant.razorpay.com/policy/KGVAQwi692P5OD/refund"
+          >
             <a className="footer-link">Refund Policy</a>
           </Link>
-          <Link href="https://merchant.razorpay.com/policy/KGVAQwi692P5OD/terms">
+          <Link
+            legacyBehavior
+            href="https://merchant.razorpay.com/policy/KGVAQwi692P5OD/terms"
+          >
             <a className="footer-link">Terms and Conditions</a>
           </Link>
-          <Link href="https://merchant.razorpay.com/policy/KGVAQwi692P5OD/contact_us">
+          <Link
+            legacyBehavior
+            href="https://merchant.razorpay.com/policy/KGVAQwi692P5OD/contact_us"
+          >
             <a className="footer-link">Contact Us</a>
           </Link>
         </section>

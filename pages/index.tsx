@@ -1,4 +1,4 @@
-import Image from "next/image";
+// import Image from "next/image";
 import Link from "next/link";
 import Banner from "../components/Banner";
 import Button from "../components/Button";
@@ -57,7 +57,7 @@ Kalyan trust is working in the field of education, providing food, medical and o
     />
     <Section
       button={(onClick) => (
-        <Button title={"Register Now"} color="primary" onClick={onClick} />
+        <Button title={"Coming Soon"} color="primary" onClick={onClick} />
       )}
       id={"volunteer"}
       title="Volunteer To Make A"

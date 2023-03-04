@@ -1,5 +1,5 @@
+import axios from "axios";
 import React from "react";
-import route from "../Api";
 
 const OpenCheckout = async (
   // id: string,
@@ -8,7 +8,9 @@ const OpenCheckout = async (
   argAmount: number,
   frequency: string
 ) => {
-  const donationRoute = route("/api/donations");
+  const donationRoute = axios.create({
+    baseURL: "https://kalyantrust.org/api/donations",
+  });
   let id;
   const res = await donationRoute.post<
     any,

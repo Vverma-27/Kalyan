@@ -42,7 +42,7 @@ const OpenCheckout = async (
     amount, // Amount is in currency subunits. Default currency is INR. Hence, 50000 refers to 50000 paise
     currency,
     name: "Kalyan Trust",
-    description: "Test Transaction",
+    description: name + " " + email + " " + amount,
     handler: (response) => {
       window.location.href = `${window.location.origin}/success`;
     },

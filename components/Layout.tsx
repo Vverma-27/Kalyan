@@ -26,6 +26,23 @@ const Layout = ({ children, title = "This is the default title" }: Props) => {
         <meta charSet="utf-8" />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <link rel="shortcut icon" href="/favicon.png" type="image/x-icon" />
+        <meta
+          name="description"
+          content=" We are currently sponsoring the education of children, organising food drives and providing financial assistance to people. 
+We believe that educating one child in a family may change the fate of that family for better."
+          key="desc"
+        />
+        <meta property="og:title" content={title} />
+        <meta
+          property="og:description"
+          content="Kalyan: Sponsor A Child's Education"
+        />
+        <meta
+          property="og:image"
+          content="https://kalyantrust.org/logo-raz.jpg"
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://kalyantrust.org/" />
       </Head>
       <input
         type="checkbox"

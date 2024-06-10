@@ -33,7 +33,9 @@ app
         console.log("🚀 ~ file: index.ts:33 ~ .then ~ err:", err);
         // console.log(err.message);
       });
-    server.use(cors({ origin: "https://kalyantrust.org" }));
+    server.use(
+      cors({ origin: "https://kalyantrust.org", methods: ["GET", "POST"] })
+    );
     server.use(express.json());
     server.use("/api/", new DonationController().router);
 

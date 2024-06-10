@@ -30,10 +30,10 @@ app
         console.log("logged in to mongo");
       })
       .catch((err) => {
-        console.log("🚀 ~ file: index.ts:33 ~ .then ~ err:", err)
+        console.log("🚀 ~ file: index.ts:33 ~ .then ~ err:", err);
         // console.log(err.message);
       });
-    server.use(cors({ origin: "*" }));
+    server.use(cors({ origin: "https://kalyantrust.org" }));
     server.use(express.json());
     server.use("/api/", new DonationController().router);
 

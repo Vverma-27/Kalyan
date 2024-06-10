@@ -9,7 +9,7 @@ const OpenCheckout = async (
   frequency: string
 ) => {
   const donationRoute = axios.create({
-    baseURL: "https://kalyantrust.org/api/donations",
+    baseURL: `${location.origin}/api/donations`,
   });
   let id;
   const res = await donationRoute.post<

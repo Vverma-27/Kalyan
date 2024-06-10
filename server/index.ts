@@ -13,7 +13,6 @@ import DonationController from "./Donation/Donation.controller";
 // const next = require("next");
 
 // const app = new App([new DonationController()], config.PORT);
-// const app = express();
 const port = config.PORT;
 const dev = process.env.NODE_ENV !== "production";
 const app = next({ dev });

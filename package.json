@@ -3,7 +3,7 @@
   "scripts": {
     "dev": "dotenv -e .env ts-node server/index.ts",
     "build": "next build && tsc -p server",
-    "start": "ts-node server/index.ts",
+    "start": "node server/dist/index.js",
     "type-check": "tsc"
   },
   "dependencies": {
